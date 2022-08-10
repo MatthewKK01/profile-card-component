@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #19A1AE;
+    background-image: url(./images/bg-pattern-top.svg) , url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+.card{
+    width: 100%;
+}
+.container{
+    width: 350px;
+    border-radius:15px;
+    overflow: hidden;
+    background-color: white;
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.profile{
+    width: 96px;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+}
+.info{
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 15px;
+    margin-top: -50px;
+}
+
+.info h2{
+    display: inline-block;
+    margin-block: 10px;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+}
+.info h3{
+    display: inline-block;
+    margin-block: 10px;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #6B7082;
+}
+.info h4{
+    margin-bottom: 24px;
+
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #6B7082;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    row-gap: 20px;
+    margin-bottom: 27px;
+}
+.number{
+    text-align: center;
+}
+.number>p{
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;    
+    margin: 9px;
+}
+.number > span{
+    color: #6B7082;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+@media screen and (max-width : 375px){
+    body {
+        background-position: right 25vw bottom 25vh, left 25vw top2 5vh;
+    }
+    .container{
+        margin-inline: 25px;
+    }
+    .card{
+        width: 100%;
+    }
+}
